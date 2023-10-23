@@ -16,7 +16,7 @@ const Footer = () => {
 </ul>
 </div>
 <div className="w-1/2">
-<Image src={logo}/>
+<Image alt="Mediavilla Mark" src={logo}/>
 </div>
 </article>
   <article className="p-4 gap-4 flex flex-col">
