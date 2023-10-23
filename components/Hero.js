@@ -1,0 +1,13 @@
+import Link from "next/link"
+import '../styles/globals.css'
+
+const Hero = ({children, background}) => {
+  return (
+    <header style={{ backgroundImage: `url("${background}")` }} id="hero" className="text-white grid mb-10 min-h-screen w-full p-6 gap-6">
+          <h1 className="self-end font-bold text-3xl sm:text-5xl">{children}</h1>
+          <Link href="https://api.whatsapp.com/send/?phone=5491126841364&text=Hola%21+Me+gustar%C3%ADa+realizar+un+pedido.&app_absent=0" className="text-white bg-red-600 p-4 w-[120px] self-start rounded-md">Contáctanos</Link>
+    </header>
+  )
+}
+
+export default Hero

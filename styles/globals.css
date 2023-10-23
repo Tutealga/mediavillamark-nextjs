@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  color: #111111;
+  background: #ffffff;
+}
+
+i > svg {
+  width: 3rem;
+  height: 3rem;
+  background: #f2f2f2;
+  border-radius: 0.35rem;
+  padding:.75rem;
+}
+
+@media (max-width: 768px){
+  i > svg {
+    width: 2rem;
+    height: 2rem;
+    padding: .5rem;
+  }
+}
+
+#hero {
+  background-color: #323232; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-blend-mode: soft-light;
+}
