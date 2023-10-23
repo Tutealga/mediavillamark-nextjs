@@ -10,7 +10,7 @@ body {
 i > svg {
   width: 3rem;
   height: 3rem;
-  background: #f2f2f2;
+  background: rgb(220 38 38 / 1);
   border-radius: 0.35rem;
   padding:.75rem;
 }

@@ -9,7 +9,7 @@ const Footer = () => {
         <section className="flex flex-col sm:flex-row justify-evenly w-full">
 <article>
 <div className="p-4 flex flex-col gap-4">
-<h4 className="font-bold text-sm sm:text-base">LEGALES</h4>
+<h4 className="font-bold text-sm sm:text-xl">Legales</h4>
 <ul className="flex flex-col gap-2">
   <Link className="text-xs sm:text-sm" href="#">Política de Privacidad</Link>
   <Link className="text-xs sm:text-sm" href="#">Política de cookies</Link>
@@ -20,7 +20,7 @@ const Footer = () => {
 </div>
 </article>
   <article className="p-4 gap-4 flex flex-col">
-  <h4 className="font-bold text-sm sm:text-base">CONTACTO</h4>
+  <h4 className="font-bold text-sm sm:text-xl">Contacto</h4>
   <div className="flex flex-col gap-2">
   <p className="text-xs sm:text-sm">Teléfono: <Link href="tel:+549 11 3118 2056">+549 11 3118 2056</Link></p>
   <p className="text-xs sm:text-sm">E-mail: <Link href="mailto:mediavillamarkarg@gmail.com">mediavillamarkarg@gmail.com</Link></p>
