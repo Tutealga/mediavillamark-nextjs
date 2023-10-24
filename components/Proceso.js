@@ -1,4 +1,4 @@
-const Cards = ({children, title, description}) => {
+const Proceso = ({children, title, description}) => {
   return (
     <div className="flex flex-col justify-center gap-4 w-full ">
         <i className="text-white">{children}</i>
@@ -8,4 +8,4 @@ const Cards = ({children, title, description}) => {
   )
 }
 
-export default Cards
+export default Proceso
