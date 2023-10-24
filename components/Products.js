@@ -1,4 +1,4 @@
-import { getProducts } from "@/services/fetchDocs";
+import { getProducts } from "@/services/fetchDocsPrueba";
 import Product from "./Product";
 
 const Products = async ({params}) => {
