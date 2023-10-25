@@ -1,4 +1,4 @@
-import { getProducts } from "@/services/fetchDocsPrueba";
+import { getProducts } from "@/services/fetchDocs";
 import Product from "./Product";
 import Filters from "./Filters";
 
