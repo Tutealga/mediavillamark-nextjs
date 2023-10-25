@@ -1,5 +1,7 @@
-export const handler = async (_req, res) => {
-await res.revalidate('/')
+import { revalidatePath } from 'next/cache';
 
-return res.json({revalidate: true})
-}
+export default async function handler() {
+    revalidatePath('/')
+  
+    return Response.json({ revalidated: true })
+  }
