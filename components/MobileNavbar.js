@@ -16,13 +16,12 @@ const MobileNavbar = () => {
 {
     isOpen
     ?
-    <ul className="text-black fixed w-auto right-0 top-[89px] min-h-screen flex flex-col sm:hidden gap-4 justify-center items-center p-4 font-bold bg-white">
+    <ul className="text-black fixed w-auto right-0 top-[89px] min-h-screen flex flex-col sm:hidden gap-4 justify-center p-4 font-bold bg-white">
 <Link href="/">Inicio</Link>
 <Link href="/cortes-vacunos">Vacunos</Link>
 <Link href="/cortes-cerdo">Cerdo</Link>
 <Link href="/embutidos">Embutidos</Link>
 <Link href="/preparados">Preparados</Link>
-<Link href="https://api.whatsapp.com/send/?phone=5491127541336&text=Hola%21+Me+gustar%C3%ADa+realizar+un+pedido.&app_absent=0" className="text-white bg-red-600 p-4 rounded-md">Contáctanos</Link>
             </ul>
             :
             null
