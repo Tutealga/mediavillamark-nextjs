@@ -8,15 +8,16 @@ const MobileNavbar = () => {
 
   return (
     <>
-    <button onClick={() => setIsOpen(true)} className="sm:hidden inline-block ml-auto">
-<a className="text-white block relative w-[24px] h-[28px] overflow-hidden whitespace-nowrap leading-none">
-<span className="bg-white absolute top-1/2 right-0 before:bg-white before:content-[''] after:content-[''] before:right-0 before:absolute before:top-[-6px] after:bg-white after:absolute after:right-0 inline-block h-[3px] w-[24px] after:h-[3px] after:w-[24px] before:h-[3px] before:w-[24px] after:top-[6px]"></span>
-</a></button>
+    <button onClick={() => setIsOpen(true)} className="grow-0 sm:hidden inline-block ml-auto">
+      <span className="text-[30px] inline-flex">
+    <svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"><path fill="#ffffff" d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z"></path></svg>
+      </span>
+    </button>
 
 {
     isOpen
     ?
-    <div className="flex flex-col text-black fixed w-auto p-4 gap-6 right-0 top-0 min-h-screen sm:hidden font-bold bg-white">
+    <div className="flex flex-col text-black fixed w-auto gap-6 right-0 top-0 min-h-screen sm:hidden font-bold bg-white p-5">
       <button onClick={() => setIsOpen(false)} className="w-full text-left">
         <span className="text-[30px]">
         <svg viewBox="0 0 512 512" aria-hidden="true" role="img" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="1em" height="1em">
