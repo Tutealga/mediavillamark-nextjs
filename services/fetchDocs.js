@@ -1,18 +1,21 @@
-import { rdb } from "@/firebase/firebase";
-import { get, ref, query, limitToFirst, orderByChild, equalTo } from 'firebase/database';
 import 'dotenv/config';
 
 export const getProducts = async ({params}) => {
-    const db = ref(rdb, process.env.FIREBASE_RDB)
+    const csv = await fetch(process.env.GOOGLE_SHEETS)
+    .then((res) => res.text());
+
+    const products = csv
+    .split('\n')
+    .slice(1)
+    .map((row) => {
+        const [id, name, price, category, img] = row.split(',');
+
+        return {id, name, price: Number(price), category, img}
+    });
 
     if(params){
-        const response = await get(query(db, orderByChild('category'), equalTo(params)))
-        const products = await response.val()
-        if(!products) return []
-        return Object.values(products)
+    return products.filter(product => product.category === params)
     }else {
-        const response = await get(query(db, limitToFirst(10)))
-        const products = await response.val()
-        return Object.values(products)
+     return products
     }
 }

@@ -20,7 +20,7 @@ const FilteredProducts = async ({params}) => {
   } else {
     return(
       <section className="w-full flex flex-col gap-4 items-center">
-        <h2 className="sm:text-2xl font-bold text-center">Nuestros productos</h2>
+        <h2 className="sm:text-3xl font-bold text-center">Nuestros productos</h2>
           <Filters/>
 <p>Esta categoria no tiene productos.</p>
       </section>
