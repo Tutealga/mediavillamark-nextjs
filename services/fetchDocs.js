@@ -16,6 +16,6 @@ export const getProducts = async ({params}) => {
     if(params){
     return products.filter(product => product.category === params)
     }else {
-     return products
+     return products.slice(0,10)
     }
 }
