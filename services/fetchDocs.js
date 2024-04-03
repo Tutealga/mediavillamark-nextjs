@@ -8,14 +8,10 @@ export const getProducts = async ({params}) => {
     .split('\n')
     .slice(1)
     .map((row) => {
-        const [id, name, price, category, img] = row.split(',');
+        const [update, category, name, native, website, x, discord, announced, categoria, subcategory, img] = row.split(',');
 
-        return {id, name, price: Number(price), category, img}
+        return {update, category, name, native, website, x, discord, announced, categoria, subcategory, img}
     });
 
-    if(params){
-    return products.filter(product => product.category === params)
-    }else {
-     return products.slice(0,10)
-    }
+    return products.filter(product => product.categoria === params)
 }

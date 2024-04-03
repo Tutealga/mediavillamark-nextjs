@@ -8,7 +8,6 @@ export async function GET(request) {
     }
 
     revalidatePath(`/`, 'page');
-    revalidatePath(`/[category]`, 'page');
 
     return Response.json({revalidate: true});
 
