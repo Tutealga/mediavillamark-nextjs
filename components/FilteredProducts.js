@@ -10,7 +10,7 @@ const FilteredProducts = async ({params}) => {
       <section className="w-full flex flex-col gap-4 items-center">
         <h2 className="sm:text-3xl font-bold text-center">Nuestros productos</h2>
           <Filters/>
-    <article className="w-full p-4 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center">
+    <article className="w-full py-4 gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 items-center">
     {
         products.map(product => <Product key={product.id} product={product}/>)
     }
