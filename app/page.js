@@ -9,7 +9,7 @@ export default function Home({ searchParams }) {
   return (
     <>
    <Hero background={background.src}>Distribuidores de carne:<br/>Venta de carne al por mayor</Hero>
-    <main className="flex mx-auto min-h-screen flex-col max-w-[1200px] gap-10">
+    <main className="flex mx-auto min-h-screen flex-col max-w-7xl gap-16 w-full">
     <Clients/>
    <Procesos/>
     <FilteredProducts params={searchParams.category}/>

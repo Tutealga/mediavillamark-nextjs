@@ -43,15 +43,15 @@ router.push(newUrl, { scroll: false })
     }
 
   return (
-    <ul className="flex w-full max-w-full gap-4 justify-center flex-wrap sm:flex-row">
+    <ul className="flex w-full max-w-full gap-1 justify-center flex-wrap sm:flex-row">
         {links.map(link => (
         <button 
         key={link.id}
         onClick={()=> handleFilter(link)}
         className={`${
             active === link ? 
-            'bg-red-600 text-white' : ''
-        } whitespace-nowrap rounded-md p-2 capitalize border-red-600 border hover:bg-red-600 hover:text-white`}
+            'bg-white text-red-600' : ''
+        } whitespace-nowrap rounded-md px-2 py-1 capitalize border-red-600 bg-red-600 text-white border hover:bg-white hover:text-red-600`}
         >
 {link.name}
         </button>

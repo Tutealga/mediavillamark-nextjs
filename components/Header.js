@@ -6,8 +6,8 @@ import MobileNavbar from './MobileNavbar';
 
 const Header = () => {
   return (
-    <header className="min-w-full h-auto fixed text-white bg-black">
-      <nav className="container max-w-[1200px] p-2 flex mx-auto items-center">
+    <header id="header-nav" className="min-w-full h-auto fixed text-white">
+      <nav className="container max-w-7xl p-2 flex mx-auto items-center">
         <Link href="/" ><Image className="max-w-[125px]" src={logo} alt="Mediavilla Mark"/></Link>
             <ul className="hidden mx-auto sm:flex gap-4 justify-center items-center font-bold">
 <Link href="/">Inicio</Link>
