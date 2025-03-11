@@ -5,7 +5,7 @@ import logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
-      <footer className="mt-10 p-4 min-w-full flex flex-col items-center justify-center w-full bg-black text-white">
+      <footer className="mt-16 p-4 min-w-full flex flex-col items-center justify-center w-full bg-black text-white">
         <section className="flex flex-col sm:flex-row justify-evenly w-full">
 <article>
 <div className="p-4 flex flex-col gap-4">

@@ -2,7 +2,7 @@ const Info = ({category}) => {
 
     if(category === 'cortes-vacunos'){
         return (
-            <section className="flex flex-col gap-4 p-4 text-center">
+            <section className="flex flex-col gap-4 px-4 py-16 text-center">
             <h2 className="sm:text-3xl font-bold text-center">Venta mayorista de cortes vacunos</h2>
             <p>Somos una empresa familiar con 50 años en la industria de la carne, lo que nos avala como profesionales. Ofrecemos a nuestros clientes, muchos de ellos reconocidos en todo el pais, carne vacuna de ternera de la mejor calidad.</p>
             <p>Trabajamos cortes de carne de res envasados al vacio, lo que ayuda al traslado y almacenamiento junto a otros productos. Cuidando asi el higiene y durabilidad del mismo. Ademas el envasado al vacio ayuda a la tiernizacion y maduracion de la carne, mejorando asi su calidad.</p>
