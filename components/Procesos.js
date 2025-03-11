@@ -4,13 +4,31 @@ import { faDolly, faAward, faHandshake } from '@fortawesome/free-solid-svg-icons
 
 const Procesos = () => {
   return (
-    <section className="flex flex-col gap-4 py-16">
-    <h2 className="sm:text-3xl font-bold text-center">Somos proveedores de carne</h2>
-    <p className="text-center sm:text-base text-xs">Estamos integrados en todas las etapas de selección y producción de los cortes:</p>
-    <div className="flex flex-col sm:grid sm:grid-cols-[repeat(auto-fill,minmax(300px,1fr))] items-center gap-6 p-4">
-   <Proceso title={"Compra de hacienda"} description={"Vinculos con productores de la Pampa Argentina, permitiendonos proveer razas británicas de alta terneza y excelente marmolado interno, tales como Aberdeen Angus y Hereford."}><FontAwesomeIcon icon={faHandshake} /></Proceso>
-   <Proceso title={"Trabajo de la carne"} description={"Faena, desposte y envasado al vacio de los cortes, en establecimientos con los más exigentes estándares de sanidad e inocuidad, habilitados por Senasa Argentina."}><FontAwesomeIcon icon={faAward} /></Proceso>
-   <Proceso title={"Logistica del producto"} description={"Estricta utilización de la cadena de frio en el almacenamiento y proceso de transporte y distribución, para asegurar la calidad y frescura de la carne."}><FontAwesomeIcon icon={faDolly} /></Proceso>
+    <section className="flex flex-col gap-4 py-16 px-3">
+    <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center">Somos proveedores de carne</h2>
+    <p className="text-balance text-sm sm:text-base md:text-lg text-center">Con 50 años de experiencia en la industria, somos una empresa familiar comprometida con ofrecer la mejor carne vacuna de ternera del país. Estamos integrados en todas las etapas de selección y producción de los cortes:</p>
+    <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-start gap-6 py-4">
+   <Proceso 
+   title={"Compra de hacienda"} 
+   description={`
+    Mantenemos vínculos sólidos con productores de la región pampeana argentina, lo que nos permite seleccionar razas británicas de alta calidad como Aberdeen Angus y Hereford. Estas razas se destacan por su terneza y su excelente marmolado interno, ofreciendo un producto premium.
+    `}>
+      <FontAwesomeIcon icon={faHandshake} />
+    </Proceso>
+   <Proceso 
+   title={"Trabajo de la carne"} 
+   description={`
+   Realizamos la faena, el desposte y el envasado al vacío en establecimientos certificados, que cumplen con los más altos estándares de sanidad e inocuidad, supervisados y habilitados por Senasa Argentina. Este proceso asegura la calidad y seguridad de cada corte.
+   `}>
+   <FontAwesomeIcon icon={faAward} />
+   </Proceso>
+   <Proceso 
+   title={"Logistica del producto"} 
+   description={`
+   Implementamos una rigurosa cadena de frío en cada etapa de almacenamiento, transporte y distribución. Este cuidado garantiza que la carne llegue a nuestros clientes con toda su frescura y calidad intacta.
+   `}>
+    <FontAwesomeIcon icon={faDolly} />
+    </Proceso>
    </div>
     </section>
   )

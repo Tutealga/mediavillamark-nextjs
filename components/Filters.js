@@ -6,7 +6,6 @@ import { useState } from 'react';
 
 const links = [
     {id: 1, name: 'vacunos', slug: 'cortes-vacunos'},
-{id: 2, name: 'cerdo', slug: 'cortes-cerdo'},
 {id: 3, name: 'embutidos', slug: 'embutidos'},
 {id: 4, name: 'preparados', slug: 'preparados'}
 ]

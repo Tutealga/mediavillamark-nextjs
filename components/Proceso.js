@@ -2,8 +2,8 @@ const Proceso = ({children, title, description}) => {
   return (
     <div className="flex flex-col justify-center gap-4 w-full ">
         <i className="text-white">{children}</i>
-        <h3 className="sm:text-xl font-bold text-sm">{title}</h3>
-        <p className="sm:text-base text-xs">{description}</p>
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold">{title}</h3>
+        <p className="text-balance text-sm sm:text-base md:text-lg">{description}</p>
     </div>
   )
 }

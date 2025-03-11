@@ -4,10 +4,9 @@ import '@/styles/globals.css';
 import Info from "./Info";
 import preparados from '../assets/preparados.jpg';
 import vacunos from '../assets/vacuno.jpg';
-import cerdo from '../assets/cerdo.jpg';
 import embutidos from '../assets/achuras.jpg';
 
-const images = {"preparados": preparados.src, "cortes-vacunos": vacunos.src, "cortes-cerdo": cerdo.src, "embutidos": embutidos.src}
+const images = {"preparados": preparados.src, "cortes-vacunos": vacunos.src, "embutidos": embutidos.src}
 
 const Categories = ({category}) => {
 
@@ -24,7 +23,7 @@ const Categories = ({category}) => {
     <main className="flex mx-auto flex-col max-w-[1200px]">
     <Info category={category}/>
      <section className="w-full flex flex-col gap-4 items-center py-16">
-   <h2 className="sm:text-3xl font-bold text-center">Proveedores de {title}</h2>
+   <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center">Proveedores de {title}</h2>
 <Products params={category}/>
 </section>
 </main>
