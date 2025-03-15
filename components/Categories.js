@@ -23,7 +23,7 @@ const Categories = ({category}) => {
     <main className="flex mx-auto flex-col max-w-[1200px]">
     <Info category={category}/>
      <section className="w-full flex flex-col gap-4 items-center py-16">
-   <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center">Proveedores de {title}</h2>
+   <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">Proveedores de {title}</h2>
 <Products params={category}/>
 </section>
 </main>
