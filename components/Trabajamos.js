@@ -24,7 +24,7 @@ const Trabajamos = () => {
       <div className="relative w-full h-full">
         <img src='/logo.png' className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 w-1/2 md:w-auto"/>
         <div className="bg-black/20 absolute top-0 left-0 w-full h-full z-20"/>
-      <img src="/trabajamos.jpg" className="w-full h-full z-10 object-cover"/>
+      <img src="/trabajamos.JPG" className="w-full h-full z-10 object-cover"/>
       </div>
     </section>
   )
