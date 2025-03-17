@@ -2,11 +2,8 @@ import Products from "@/components/Products";
 import Hero from '@/components/Hero';
 import '@/styles/globals.css';
 import Info from "./Info";
-import preparados from '../assets/preparados.jpg';
-import vacunos from '../assets/vacuno.jpg';
-import embutidos from '../assets/achuras.jpg';
 
-const images = {"preparados": preparados.src, "cortes-vacunos": vacunos.src, "embutidos": embutidos.src}
+const images = {"preparados": '/assets/preparados.jpg', "cortes-vacunos": '/assets/vacuno.jpg'}
 
 const Categories = ({category}) => {
 

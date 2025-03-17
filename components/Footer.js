@@ -1,7 +1,4 @@
-import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-import logo from '../assets/logo.png'
 
 const Footer = () => {
   return (
@@ -16,7 +13,7 @@ const Footer = () => {
 </ul>
 </div>
 <div className="w-1/2">
-<Image alt="Mediavilla Mark" src={logo}/>
+<img alt="Mediavilla Mark" src='/logo.png'/>
 </div>
 </article>
   <article className="p-4 gap-4 flex flex-col">

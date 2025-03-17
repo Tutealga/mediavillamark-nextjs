@@ -4,8 +4,8 @@ import { faDolly, faAward, faHandshake } from '@fortawesome/free-solid-svg-icons
 
 const Procesos = () => {
   return (
-    <section className="flex flex-col gap-4 py-16 px-3">
-    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center">Somos proveedores de carne</h2>
+    <section className="flex flex-col gap-4 py-16 px-3 max-w-6xl w-full">
+    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center text-balance">Somos proveedores de carne de la más alta calidad</h2>
     <p className="text-balance text-sm sm:text-base md:text-lg text-center">Con 50 años de experiencia en la industria, somos una empresa familiar comprometida con ofrecer la mejor carne vacuna de ternera del país. Estamos integrados en todas las etapas de selección y producción de los cortes:</p>
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 items-start gap-6 py-4">
    <Proceso 

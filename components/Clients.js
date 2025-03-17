@@ -1,19 +1,12 @@
-import Image from "next/image"
-
-import dia from '../assets/supermercado-dia.svg'
-import kansas from '../assets/mini_brand.png'
-import grupol from '../assets/grupol.png'
-import whim from '../assets/whim.png'
-
 const Clients = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center w-full px-3 py-16">
-        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-left">Confian en nosotros</h2>
+    <section className="flex flex-col md:flex-row items-center justify-center w-full px-3 py-16 max-w-6xl">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-left">Confían en nosotros</h2>
           <article className="grid items-center justify-center w-full gap-12 grid-cols-2 sm:grid-cols-4">
-            <Image className="mx-auto w-full h-auto" src={dia} alt={"Supermercado dia"}/>
-            <Image className="mx-auto w-full h-auto" src={kansas} alt={"Kansas Grill & Bar"}/>  
-            <Image className="mx-auto w-full h-auto" src={grupol} alt={"Grupo L"}/> 
-            <Image className="mx-auto w-full h-auto" src={whim} alt={"Whim burgers"}/>             
+            <img className="mx-auto w-full h-auto" src='/assets/supermercado-dia.svg' alt="Supermercado dia"/>
+            <img className="mx-auto w-full h-auto" src='/assets/mini_brand.png' alt="Kansas Grill & Bar"/>  
+            <img className="mx-auto w-full h-auto" src='/assets/grupol.png' alt="Grupo L"/> 
+            <img className="mx-auto w-full h-auto" src='/assets/whim.png' alt="Whim burgers"/>             
           </article>
     </section>
   )
